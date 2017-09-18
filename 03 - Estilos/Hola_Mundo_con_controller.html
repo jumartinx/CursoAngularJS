@@ -8,30 +8,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="../node_modules/angular/angular.js"></script>
-    <script src="../02 - Ejemplo completo Angular/app.js"></script>
-    <script src="../02 - Ejemplo completo Angular/AppController.js"></script>
+    <script src="../03 - Estilos/app.js"></script>
+    <script src="../03 - Estilos/appController.js"></script>
     <title>Document</title>
 </head>
 <!-- ng-init directiva para inicializar una variable -->
 
-<body ng-app="appMain" ng-controller="AppController">
+<body ng-app="appMain" ng-controller="appController as vm">
 
     <!-- {{}} indicamos que es una variable lo que vamos a utilizar -->
 
     <form>
         <p>
             <label for="inputName">Nombre: </label>
-            <input id="inputName" type="text" ng-model="user.name"> </input>
+            <input id="inputName" type="text" ng-model="vm.user.name"> </input>
 
         </p>
         <p>
             <!-- evento ng-click para controlar el click sobre el boton -->
-            <button ng-click="borrar()">Borrar</button>
+            <button ng-click="vm.borrar()">Borrar</button>
         </p>
 
     </form>
-    <p> Bienvenido al curso de {{curso}}</p>
-    <p>Hola {{user.name}} </p>
+    <p> Bienvenido al curso de {{vm.curso}}</p>
+    <p>Hola {{vm.user.name}} </p>
 </body>
 
 </html>
