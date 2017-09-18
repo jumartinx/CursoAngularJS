@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Hola Mundo Controller</title>
+    <meta name="description" content="Curso de AngularJS">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="/lib/angular.js"></script>
+    <script src="/02 - Ejemplo completo Angular/app.js"></script>
+    <title>Document</title>
+</head>
+<!-- ng-init directiva para inicializar una variable -->
+
+<body ng-app="appMain" ng-controller="AppController">
+
+    <!-- {{}} indicamos que es una variable lo que vamos a utilizar -->
+
+    <form>
+        <p>
+            <label for="inputName">Nombre: </label>
+            <input id="inputName" type="text" ng-model="user.name"> </input>
+
+        </p>
+        <p>
+            <!-- evento ng-click para controlar el click sobre el boton -->
+            <button ng-click="borrar()">Borrar</button>
+        </p>
+
+    </form>
+    <p> Bienvenido al curso de {{curso}}</p>
+    <p>Hola {{user.name}} </p>
+</body>
+
+</html>
