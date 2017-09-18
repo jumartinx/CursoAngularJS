@@ -1,0 +1,27 @@
+{
+  "name": "cursoangularjs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jumartinx/CursoAngularJS.git"
+  },
+  "keywords": [
+    "Web",
+    "SPA",
+    "Angular"
+  ],
+  "author": "jlmmora",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jumartinx/CursoAngularJS/issues"
+  },
+  "homepage": "https://github.com/jumartinx/CursoAngularJS#readme",
+  "dependencies": {
+    "angular": "^1.6.6"
+  }
+}
